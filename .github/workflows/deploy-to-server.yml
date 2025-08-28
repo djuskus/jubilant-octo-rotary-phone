@@ -44,4 +44,6 @@ jobs:
             echo "Building site with Hugo..."
             hugo
 
+            rm -rf /www/*; mv public/* /www/
+
             echo "Deployment completed successfully!"
